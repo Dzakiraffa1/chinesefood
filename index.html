@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CHINESE FOOD| Dzaki Raffa</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      />
+      <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+
+  </head>
+  <body>
+    <header>
+      <div class="nav">
+  
+        <a href="#" class="logo">
+          <ion-icon name="fast-food"></ion-icon>
+          Chinese Food
+        </a>
+  
+        <div class="box">
+          <div class="cart-count">0</div>
+          <ion-icon name="cart"  id="cart-icon" ></ion-icon>
+        </div>
+  
+        <div class="cart">
+          <div class="cart-title">Cart Items</div>
+          <div class="cart-content">
+
+          </div>
+          
+        <div class="total">
+          <div class="total-title">Total</div>
+          <div class="total-price">Rs.0</div>
+        </div>
+  
+        <button id="place-order-button" class="btn-buy">Place Order</button>
+  
+        <ion-icon name="close" id="cart-close"></ion-icon>
+  
+        </div>
+      </div>
+    </header>
+
+    <!-- cover section -->
+    <section class="cover">
+      <div class="cover--overlay">
+        <h1>Chinese Food</h1>
+          <span class="slogan">Fresh Flavorful Authentic Chinese Food Delivered</span>
+      </div>
+    </section>
+
+    <!-- search bar -->
+      <div class="wrap">
+        <div class="search">
+           <input type="text" class="searchTerm" placeholder="What are you looking for?">
+           <button type="submit" class="searchButton">
+             <i class="fa fa-search"></i>
+          </button>
+        </div>
+      </div>
+  
+
+    <!-- data categories -->
+    <div class="container1">
+      <div class="row mt-5" id="filter-buttons">
+        <div class="col-12">
+          <button class="btn mb-2 me-1 active" data-filter="all">All</button>
+          <button class="btn mb-2 mx-1" data-filter="noodle">Noodle</button>
+          <button class="btn mb-2 mx-1" data-filter="soup">Soup</button>
+          <button class="btn mb-2 mx-1" data-filter="steam">Steam</button>
+          <button class="btn mb-2 mx-1" data-filter="rice">Rice</button>
+          <button class="btn mb-2 mx-1" data-filter="fried">Fried Food</button>
+          <button class="btn mb-2 mx-1" data-filter="drink">Drinks</button>
+        </div>
+      </div>
+
+     
+
+      <!-- card item section-->
+      <div class="container">
+        <div class="shop-content" id="filterable-cards">
+    
+      
+          <div class="food-box" data-name="noodle">
+            <div class="pic">
+              <img src="img/noodle (1).webp" class="food-img">
+            </div>
+            <h2 class="food-title">Chicken Noodle</h2>
+            <span class="food-price">45k</span>
+            <ion-icon name="cart" class="add-cart"></ion-icon>
+          </div>
+
+          <div class="food-box" data-name="noodle">
+            <div class="pic">
+              <img src="img/noodle (2).webp" class="food-img">
+            </div>
+            <h2 class="food-title">Meatball Noodle</h2>
+            <span class="food-price">45k</span>
+            <ion-icon name="cart" class="add-cart"></ion-icon>
+          </div>
+
+          <div class="food-box" data-name="noodle">
+            <div class="pic">
+              <img src="img/noodle (3).webp" class="food-img">
+            </div>
+            <h2 class="food-title">Chicken Feet Noodle</h2>
+            <span class="food-price">42k</span>
+            <ion-icon name="cart" class="add-cart"></ion-icon>
+          </div>
+
+          <div class="food-box" data-name="noodle">
+            <div class="pic">
+              <img src="img/noodle (4).webp" class="food-img">
+            </div>
+            <h2 class="food-title">Beef Noodle</h2>
+            <span class="food-price">46k</span>
+            <ion-icon name="cart" class="add-cart"></ion-icon>
+          </div>
+
+          <div class="food-box" data-name="noodle">
+            <div class="pic">
+              <img src="img/noodle (5).webp" class="food-img">
+            </div>
+            <h2 class="food-title">Basic Noodle</h2>
+            <span class="food-price">40k</span>
+            <ion-icon name="cart" class="add-cart"></ion-icon>
+          </div>
+          
+          <div class="food-box" data-name="noodle">
+            <div class="pic">
+              <img src="img/noodle (6).webp" class="food-img">
+            </div>
+            <h2 class="food-title">Combo Noodle</h2>
+            <span class="food-price">56k</span>
+            <ion-icon name="cart" class="add-cart"></ion-icon>
+          </div>
+
+          <div class="food-box" data-name="noodle">
+            <div class="pic">
+              <img src="img/noodle.webp" class="food-img">
+            </div>
+            <h2 class="food-title">Wonton Noodle</h2>
+            <span class="food-price">48k</span>
+            <ion-icon name="cart" class="add-cart"></ion-icon>
+          </div>
+
+          <div class="food-box" data-name="soup">
+            <div class="pic">
+              <img src="img/soup (1).webp" class="food-img">
+            </div>
+            <h2 class="food-title">Mustard Soup</h2>
+            <span class="food-price">22k</span>
+            <ion-icon name="cart" class="add-cart"></ion-icon>
+          </div>
+
+          <div class="food-box" data-name="soup">
+            <div class="pic">
+              <img src="img/soup (2).webp" class="food-img">
+            </div>
+            <h2 class="food-title">Wonton Soup</h2>
+            <span class="food-price">25k</span>
+            <ion-icon name="cart" class="add-cart"></ion-icon>
+          </div>
+
+          <div class="food-box" data-name="soup">
+            <div class="pic">
+              <img src="img/soup (3).webp" class="food-img">
+            </div>
+            <h2 class="food-title">Tofu Soup</h2>
+            <span class="food-price">26k</span>
+            <ion-icon name="cart" class="add-cart"></ion-icon>
+          </div>
+
+          <div class="food-box" data-name="soup">
+            <div class="pic">
+              <img src="img/soup (4).webp" class="food-img">
+            </div>
+            <h2 class="food-title">Basic Soup</h2>
+            <span class="food-price">20k</span>
+            <ion-icon name="cart" class="add-cart"></ion-icon>
+          </div>
+
+          <div class="food-box" data-name="soup">
+            <div class="pic">
+              <img src="img/soup (5).webp" class="food-img">
+            </div>
+            <h2 class="food-title">Special Meatball Soup</h2>
+            <span class="food-price">28k</span>
+            <ion-icon name="cart" class="add-cart"></ion-icon>
+          </div>
+
+          <div class="food-box" data-name="soup">
+            <div class="pic">
+              <img src="img/soup (6).webp" class="food-img">
+            </div>
+            <h2 class="food-title">Chicken Soup</h2>
+            <span class="food-price">24k</span>
+            <ion-icon name="cart" class="add-cart"></ion-icon>
+          </div>
+
+          <div class="food-box" data-name="soup">
+            <div class="pic">
+              <img src="img/soup (7).webp" class="food-img">
+            </div>
+            <h2 class="food-title">Meatball Soup</h2>
+            <span class="food-price">26k</span>
+            <ion-icon name="cart" class="add-cart"></ion-icon>
+          </div>
+
+          <div class="food-box" data-name="soup">
+            <div class="pic">
+              <img src="img/soup (8).webp" class="food-img">
+            </div>
+            <h2 class="food-title">Special Mustard Soup</h2>
+            <span class="food-price">27k</span>
+            <ion-icon name="cart" class="add-cart"></ion-icon>
+          </div>
+
+          <div class="food-box" data-name="steam">
+            <div class="pic">
+              <img src="img/steam (1).webp" class="food-img">
+            </div>
+            <h2 class="food-title">Steam Tofu</h2>
+            <span class="food-price">30k</span>
+            <ion-icon name="cart" class="add-cart"></ion-icon>
+          </div>
+
+          <div class="food-box" data-name="steam">
+            <div class="pic">
+              <img src="img/steam (10).webp" class="food-img">
+            </div>
+            <h2 class="food-title">Steam Dumpling</h2>
+            <span class="food-price">28k</span>
+            <ion-icon name="cart" class="add-cart"></ion-icon>
+          </div>
+
+          <div class="food-box" data-name="steam">
+            <div class="pic">
+              <img src="img/steam (11).webp" class="food-img">
+            </div>
+            <h2 class="food-title">Steam Radish Beef Cake</h2>
+            <span class="food-price">31k</span>
+            <ion-icon name="cart" class="add-cart"></ion-icon>
+          </div>
+
+          <div class="food-box" data-name="steam">
+            <div class="pic">
+              <img src="img/steam (12).webp" class="food-img">
+            </div>
+            <h2 class="food-title">Steam Radish Cake</h2>
+            <span class="food-price">32k</span>
+            <ion-icon name="cart" class="add-cart"></ion-icon>
+          </div>
+
+          <div class="food-box" data-name="steam">
+            <div class="pic">
+              <img src="img/steam (2).webp" class="food-img">
+            </div>
+            <h2 class="food-title">Dimsum</h2>
+            <span class="food-price">25k</span>
+            <ion-icon name="cart" class="add-cart"></ion-icon>
+          </div>
+
+          <div class="food-box" data-name="steam">
+            <div class="pic">
+              <img src="img/steam (3).webp" class="food-img">
+            </div>
+            <h2 class="food-title">Steam Radish Chicken Feet Cake</h2>
+            <span class="food-price">30k</span>
+            <ion-icon name="cart" class="add-cart"></ion-icon>
+          </div>
+
+          <div class="food-box" data-name="steam">
+            <div class="pic">
+              <img src="img/steam (4).webp" class="food-img">
+            </div>
+            <h2 class="food-title">Steam Radish Shrimp Cake</h2>
+            <span class="food-price">34k</span>
+            <ion-icon name="cart" class="add-cart"></ion-icon>
+          </div>
+
+          <div class="food-box" data-name="steam">
+            <div class="pic">
+              <img src="img/steam (5).webp" class="food-img">
+            </div>
+            <h2 class="food-title">Steam Radish Garlic Cake</h2>
+            <span class="food-price">35k</span>
+            <ion-icon name="cart" class="add-cart"></ion-icon>
+          </div>
+
+          <div class="food-box" data-name="steam">
+            <div class="pic">
+              <img src="img/steam (6).webp" class="food-img">
+            </div>
+            <h2 class="food-title">Steam Chicken Feet</h2>
+            <span class="food-price">33k</span>
+            <ion-icon name="cart" class="add-cart"></ion-icon>
+          </div>
+
+          <div class="food-box" data-name="steam">
+            <div class="pic">
+              <img src="img/steam (8).webp" class="food-img">
+            </div>
+            <h2 class="food-title">Salted Egg Buns</h2>
+            <span class="food-price">35k</span>
+            <ion-icon name="cart" class="add-cart"></ion-icon>
+          </div>
+
+          <div class="food-box" data-name="steam">
+            <div class="pic">
+              <img src="img/steam (9).webp" class="food-img">
+            </div>
+            <h2 class="food-title">Steam Beef</h2>
+            <span class="food-price">38k</span>
+            <ion-icon name="cart" class="add-cart"></ion-icon>
+          </div>
+
+          <div class="food-box" data-name="rice">
+            <div class="pic">
+              <img src="img/rice (1).webp" class="food-img">
+            </div>
+            <h2 class="food-title">Shrimp Rice</h2>
+            <span class="food-price">40k</span>
+            <ion-icon name="cart" class="add-cart"></ion-icon>
+          </div>
+
+          <div class="food-box" data-name="rice">
+            <div class="pic">
+              <img src="img/rice (2).webp" class="food-img">
+            </div>
+            <h2 class="food-title">Chicken Rice</h2>
+            <span class="food-price">38k</span>
+            <ion-icon name="cart" class="add-cart"></ion-icon>
+          </div>
+
+          <div class="food-box" data-name="rice">
+            <div class="pic">
+              <img src="img/rice (3).webp" class="food-img">
+            </div>
+            <h2 class="food-title">Meatball Rice</h2>
+            <span class="food-price">48k</span>
+            <ion-icon name="cart" class="add-cart"></ion-icon>
+          </div>
+
+          <div class="food-box" data-name="rice">
+            <div class="pic">
+              <img src="img/rice (4).webp" class="food-img">
+            </div>
+            <h2 class="food-title">Beef Rice</h2>
+            <span class="food-price">46k</span>
+            <ion-icon name="cart" class="add-cart"></ion-icon>
+          </div>
+
+          <div class="food-box" data-name="rice">
+            <div class="pic">
+              <img src="img/rice (5).webp" class="food-img">
+            </div>
+            <h2 class="food-title">Basic Porridge</h2>
+            <span class="food-price">26k</span>
+            <ion-icon name="cart" class="add-cart"></ion-icon>
+          </div>
+
+          <div class="food-box" data-name="rice">
+            <div class="pic">
+              <img src="img/rice (6).webp" class="food-img">
+            </div>
+            <h2 class="food-title">Rice</h2>
+            <span class="food-price">10k</span>
+            <ion-icon name="cart" class="add-cart"></ion-icon>
+          </div>
+
+          <div class="food-box" data-name="rice">
+            <div class="pic">
+              <img src="img/rice (7).webp" class="food-img">
+            </div>
+            <h2 class="food-title">Chicken Feet Rice</h2>
+            <span class="food-price">42k</span>
+            <ion-icon name="cart" class="add-cart"></ion-icon>
+          </div>
+
+          <div class="food-box" data-name="fried">
+            <div class="pic">
+              <img src="img/fried food (1).webp" class="food-img">
+            </div>
+            <h2 class="food-title">Fried Meatball</h2>
+            <span class="food-price">38k</span>
+            <ion-icon name="cart" class="add-cart"></ion-icon>
+          </div>
+
+          <div class="food-box" data-name="fried">
+            <div class="pic">
+              <img src="img/fried food (2).webp" class="food-img">
+            </div>
+            <h2 class="food-title">Fried Shrimp Mayo</h2>
+            <span class="food-price">28k</span>
+            <ion-icon name="cart" class="add-cart"></ion-icon>
+          </div>
+
+          <div class="food-box" data-name="fried">
+            <div class="pic">
+              <img src="img/fried food (3).webp" class="food-img">
+            </div>
+            <h2 class="food-title">Fried Tofu</h2>
+            <span class="food-price">34k</span>
+            <ion-icon name="cart" class="add-cart"></ion-icon>
+          </div>
+
+          <div class="food-box" data-name="fried">
+            <div class="pic">
+              <img src="img/fried food (4).webp" class="food-img">
+            </div>
+            <h2 class="food-title">Chicken Karage</h2>
+            <span class="food-price">28k</span>
+            <ion-icon name="cart" class="add-cart"></ion-icon>
+          </div>
+
+          <div class="food-box" data-name="fried">
+            <div class="pic">
+              <img src="img/fried food (5).webp" class="food-img">
+            </div>
+            <h2 class="food-title">Chicken Nugget</h2>
+            <span class="food-price">28k</span>
+            <ion-icon name="cart" class="add-cart"></ion-icon>
+          </div>
+
+          <div class="food-box" data-name="fried">
+            <div class="pic">
+              <img src="img/fried food (6).webp" class="food-img">
+            </div>
+            <h2 class="food-title">Fried Bread</h2>
+            <span class="food-price">25k</span>
+            <ion-icon name="cart" class="add-cart"></ion-icon>
+          </div>
+
+          <div class="food-box" data-name="drink">
+            <div class="pic">
+              <img src="img/drinks (1).webp" class="food-img">
+            </div>
+            <h2 class="food-title">Milo</h2>
+            <span class="food-price">15k</span>
+            <ion-icon name="cart" class="add-cart"></ion-icon>
+          </div>
+
+          <div class="food-box" data-name="drink">
+            <div class="pic">
+              <img src="img/drinks (2).webp" class="food-img">
+            </div>
+            <h2 class="food-title">Teh Botol</h2>
+            <span class="food-price">10k</span>
+            <ion-icon name="cart" class="add-cart"></ion-icon>
+          </div>
+
+          <div class="food-box" data-name="drink">
+            <div class="pic">
+              <img src="img/drinks (3).webp" class="food-img">
+            </div>
+            <h2 class="food-title">Cola</h2>
+            <span class="food-price">15k</span>
+            <ion-icon name="cart" class="add-cart"></ion-icon>
+          </div>
+
+          <div class="food-box" data-name="drink">
+            <div class="pic">
+              <img src="img/drinks (4).webp" class="food-img">
+            </div>
+            <h2 class="food-title">Hot Tea</h2>
+            <span class="food-price">10k</span>
+            <ion-icon name="cart" class="add-cart"></ion-icon>
+          </div>
+
+          <div class="food-box" data-name="drink">
+            <div class="pic">
+              <img src="img/drinks (5).webp" class="food-img">
+            </div>
+            <h2 class="food-title">Ice Tea</h2>
+            <span class="food-price">12k</span>
+            <ion-icon name="cart" class="add-cart"></ion-icon>
+          </div>
+
+          <div class="food-box" data-name="drink">
+            <div class="pic">
+              <img src="img/drinks (6).webp" class="food-img">
+            </div>
+            <h2 class="food-title">Hot Coffee</h2>
+            <span class="food-price">10k</span>
+            <ion-icon name="cart" class="add-cart"></ion-icon>
+          </div>
+
+          <div class="food-box" data-name="drink">
+            <div class="pic">
+              <img src="img/drinks (9).webp" class="food-img">
+            </div>
+            <h2 class="food-title">Mineral Water</h2>
+            <span class="food-price">8k</span>
+            <ion-icon name="cart" class="add-cart"></ion-icon>
+          </div>
+        </div>
+      </div>
+      <footer>
+        <div class="credit">
+          <p>Created by Muhammad Dzaki Raffa | &copy; 2024</p>
+          <a href="https://gofood.co.id/jakarta/restaurant/winglok-hongkong-dimsum-cilandak-ab9c6ec7-b242-4ac0-b824-d9b8c534d8ff?page=3">Image Source</a>
+        </div>
+      </footer>
+    </div>
+    <script src="chinesefood.js"></script>
+  </body>
+</html>
+
